@@ -1,0 +1,27 @@
+{
+  "name": "node-kit",
+  "version": "1.0.5",
+  "description": "Common module for nodejs projects",
+  "private": true,
+  "main": "./dist/index.js",
+  "type": "commonjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "npm run build",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\""
+  },
+  "dependencies": {
+    "@nestjs/common": "^7.0.1",
+    "@nestjs/core": "^7.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.2",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.6.4"
+  }
+}
